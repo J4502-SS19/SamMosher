@@ -36,6 +36,9 @@ body{
 #nav {
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #nav li{
@@ -69,4 +72,11 @@ body{
 
   img{
       border: none;
+  }
+
+  @media (max-width: 600px) {
+  	#nav {
+  		flex-direction: column;
+  		justify-content: center;
+  	}
   }
