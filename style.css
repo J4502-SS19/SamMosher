@@ -74,12 +74,3 @@ body{
   img{
       border: none;
   }
-
-  @media (min-width: 800px) {
-  	#nav {
-  		flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      background-color: #fdd1cb;
-  	}
-  }
