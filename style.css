@@ -124,9 +124,12 @@ body{
 
     .pullquote{
       display: block;
-      font-size: 20pt;
-      font-weight: bolder;
       font-style: italic;
+    }
+
+    #pullquote{
+      font-size: 20px;
+      font-weight: bold;
     }
   }
 
@@ -183,5 +186,6 @@ body{
 
     #pullquote{
       font-size: 40px;
+      font-weight: bold;
     }
   }
