@@ -1,7 +1,7 @@
 p{
   font-family: 'Oswald', Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 1em;
+  font-weight: normal;
+  font-size: 16pt;
   color: #093654;
 }
 
@@ -16,8 +16,13 @@ h1{
 
 body{
   font-family: 'Oswald', Helvetica, sans-serif;
-  font-weight: lighter;
+  font-weight: normal;
   background-color: #fdd1cb;
+}
+
+#container {
+    width: 95%;
+    margin: 0 auto;
 }
 
 .profile{
@@ -44,6 +49,11 @@ body{
 .running img{
   max-width: 100%;
   height: auto;
+}
+
+.pullquote {
+  display: none;
+  font-weight: bold;
 }
 
 #navigation {
@@ -97,10 +107,18 @@ body{
       border: none;
   }
 
+  @media screen and (min-width: 600px){
+    #container {
+      width: 75%;
+    }
+  }
+
   @media (min-width: 1000px) {
     #nav {
       flex-direction: row;
       justify-content: space-around;
       background-color: #fdd1cb;
     }
+
+    
   }
