@@ -15,8 +15,6 @@ h1{
 }
 
 body{
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-weight: normal;
   background-color: #fdd1cb;
 }
 
@@ -53,7 +51,6 @@ body{
 
 .pullquote {
   display: none;
-  font-weight: bold;
 }
 
 #navigation {
@@ -113,12 +110,78 @@ body{
     }
   }
 
-  @media (min-width: 1000px) {
+  @media screen and (min-width: 1000px) {
     #nav {
       flex-direction: row;
       justify-content: space-around;
       background-color: #fdd1cb;
     }
 
-    
+    .profile {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .pullquote{
+      display: block;
+      font-size: 20pt;
+      font-weight: bolder;
+      font-style: italic;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    article{
+      display: grid;
+      grid-template-columns: 250px 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-areas:
+        "a b b"
+        "a c c"
+        "d d f"
+        "g g h"
+        "e e e"
+    }
+
+    .profile{
+      margin-top: auto;
+      margin-bottom: auto;
+      grid-area: a;
+    }
+
+    .profile img{
+      width: 250px;
+    }
+
+    .info{
+      grid-area: b;
+    }
+
+    .bio1{
+      grid-area: c;
+    }
+
+    .bio2{
+      grid-area: d;
+    }
+
+    .bio3{
+      grid-area: e;
+    }
+
+    .headshot{
+      grid-area: f;
+    }
+
+    .running{
+      grid-area: g;
+    }
+
+    .pullquote{
+      grid-area: h
+    }
+
+    #pullquote{
+      font-size: 40px;
+    }
   }
