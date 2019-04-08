@@ -1,5 +1,4 @@
 p{
-  text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 1em;
@@ -16,13 +15,38 @@ h1{
 }
 
 body{
-  text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
   font-weight: lighter;
   background-color: #fdd1cb;
 }
 
-#container {
+.profile{
+  text-align: center;
+}
+
+.info{
+  text-align: center;
+}
+
+.headshot {
+  text-align: center;
+}
+
+.headshot img {
+  max-width: 100%;
+  height: auto;
+}
+
+.running {
+  text-align: center;
+}
+
+.running img{
+  max-width: 100%;
+  height: auto;
+}
+
+#navigation {
   background-color: #fff;
   width: 80%;
   margin-top: 0;
