@@ -11,11 +11,49 @@ h1{
   font-weight: bold;
   font-size: 3em;
   color: #0bff01;
-  background-color: #ff859c;
 }
 
 body{
   background-color: #fdd1cb;
+}
+
+nav ul li {
+    display: block;
+    border-top: 1px #79896d solid;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-family: 'Oswald', Helvetica, sans-serif;
+}
+
+nav a:hover, nav a:active {
+    color: black;
+  }
+
+header {
+    display: flex;
+    flex-flow: row;
+    background-color: #ed1255;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.menu-trigger{
+  order: 1;
+  font-size: 1.75em;
+  width: 2em;
+}
+
+header h1{
+  order: 2;
+}
+
+nav ul {
+  display: none;
 }
 
 #container {
@@ -53,45 +91,6 @@ body{
   display: none;
 }
 
-#navigation {
-  background-color: #fff;
-  width: 80%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin: 0 auto 0 auto;
-  margin: 0 auto;
-}
-
-#nav {
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-
-#nav li{
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #ccc;
-}
-
-  #nav a:link, #nav a:visited {
-    display: block;
-    color: #fff;
-    background-color: #ed1255;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    padding: 4px;
-    font-family: 'Oswald', Helvetica, sans-serif;
-  }
-
-    #nav a:hover, #nav a:active {
-      background-color:	#ff93ac;
-    }
-
   #footer {
       color: black;
       font-family: 'Oswald', Helvetica, sans-serif;
@@ -111,10 +110,24 @@ body{
   }
 
   @media screen and (min-width: 1000px) {
-    #nav {
-      flex-direction: row;
-      justify-content: space-around;
-      background-color: #fdd1cb;
+    nav ul {
+      display: flex;
+    }
+
+    nav ul li {
+      border-top: none;
+    }
+
+    .menu-trigger{
+      display: none;
+    }
+
+    header h1 {
+      order: 1;
+    }
+
+    nav {
+      order: 2;
     }
 
     .profile {
