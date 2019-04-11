@@ -116,6 +116,7 @@ nav ul {
 
     nav ul li {
       border-top: none;
+      text-align: center;
     }
 
     .menu-trigger{
